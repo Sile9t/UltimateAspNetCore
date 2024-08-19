@@ -1,3 +1,5 @@
+using WebApplication1.Extensions;
+
 namespace WebApplication1
 {
     public class Program
@@ -7,6 +9,9 @@ namespace WebApplication1
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            builder.Services.ConfigureCors();
+            builder.Services.ConfigureIISIntegration();
 
             builder.Services.AddControllers();
 
