@@ -2,6 +2,11 @@
 {
     public static class ServiceExtensions
     {
+
+        /// <summary>
+        ///     Cross-Origin Resource Sharing (CORS) - mechanism to give orrestrict
+        ///         access to application from different domains.
+        /// </summary>
         public static void ConfigureCors(this IServiceCollection services) =>
             services.AddCors(options =>
             {
