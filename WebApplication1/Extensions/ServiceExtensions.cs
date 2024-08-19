@@ -1,4 +1,6 @@
-﻿namespace WebApplication1.Extensions
+﻿using Microsoft.AspNetCore.Builder;
+
+namespace WebApplication1.Extensions
 {
     public static class ServiceExtensions
     {
@@ -16,6 +18,10 @@
                     .AllowAnyHeader());
             });
 
+        public static void ConfigureIISIntegration(this IServiceCollection services) =>
+            services.Configure<IISOptions>(options =>
+            {
 
+            });
     }
 }
