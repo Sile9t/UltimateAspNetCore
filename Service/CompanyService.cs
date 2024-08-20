@@ -1,6 +1,7 @@
 ﻿using Contracts;
 using Entities;
 using Service.Contracts;
+using Shared.Dtos;
 
 namespace Service
 {
@@ -15,13 +16,17 @@ namespace Service
             _logger = logger;
         }
 
-        public IEnumerable<Company> GetAllCompanies(bool trackChanges)
+        public IEnumerable<CompanyDto> GetAllCompanies(bool trackChanges)
         {
             try
             {
                 var companies = _repository.Company.GetAllCompanies(trackChanges);
 
-                return companies;
+                var companiesDto = companies.Select(x =>
+                    new CompanyDto(x.Id, x.Name ?? "", string.Join(' ', x.Address, x.Country)))
+                    .ToList();
+
+                return companiesDto;
             }
             catch (Exception ex)
             {
