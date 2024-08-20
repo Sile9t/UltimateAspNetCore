@@ -118,6 +118,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.3.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
