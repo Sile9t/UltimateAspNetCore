@@ -32,7 +32,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\UltimateAspNeet\\WebApplication1\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\Service.Contracts\\Service.Contracts.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

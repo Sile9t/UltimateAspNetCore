@@ -1,0 +1,15 @@
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\bin\Debug\net8.0\Service.Contracts.deps.json
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\bin\Debug\net8.0\Service.Contracts.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\bin\Debug\net8.0\Service.Contracts.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\bin\Debug\net8.0\Entities.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\bin\Debug\net8.0\Entities.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service.Contracts.csproj.AssemblyReference.cache
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service.Contracts.AssemblyInfoInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service.Contracts.AssemblyInfo.cs
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service.Contracts.csproj.CoreCompileInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service..DEC3DE55.Up2Date
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service.Contracts.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\refint\Service.Contracts.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service.Contracts.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\ref\Service.Contracts.dll

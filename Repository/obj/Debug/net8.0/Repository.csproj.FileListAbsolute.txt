@@ -13,3 +13,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\Repository\obj\Debug\net8.0\Reposito
 C:\Projects\UltimateAspNeet\WebApplication1\Repository\obj\Debug\net8.0\refint\Repository.dll
 C:\Projects\UltimateAspNeet\WebApplication1\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Repository\bin\Debug\net8.0\Contracts.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Repository\bin\Debug\net8.0\Contracts.pdb

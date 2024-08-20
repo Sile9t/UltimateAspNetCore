@@ -13,3 +13,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\obj\Debug\net8.0\Logge
 C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\obj\Debug\net8.0\refint\LoggerService.dll
 C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\obj\Debug\net8.0\LoggerService.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\obj\Debug\net8.0\ref\LoggerService.dll
+C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\bin\Debug\net8.0\Entities.dll
+C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\bin\Debug\net8.0\Entities.pdb

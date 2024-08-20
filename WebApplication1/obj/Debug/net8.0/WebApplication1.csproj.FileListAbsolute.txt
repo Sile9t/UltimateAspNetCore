@@ -141,3 +141,10 @@ C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Ent
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Repository.dll
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Repository.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Entities.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Service.Contracts.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Service.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\WebApplication1.Presentation.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\WebApplication1.Presentation.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Service.Contracts.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Service.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs

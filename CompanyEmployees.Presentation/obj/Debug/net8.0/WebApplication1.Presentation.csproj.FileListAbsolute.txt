@@ -1,0 +1,17 @@
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\WebApplication1.Presentation.deps.json
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\WebApplication1.Presentation.dll
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\WebApplication1.Presentation.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\Entities.dll
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\Service.Contracts.dll
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\Service.Contracts.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\Entities.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\WebApplication1.Presentation.csproj.AssemblyReference.cache
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\WebApplication1.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\WebApplication1.Presentation.AssemblyInfoInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\WebApplication1.Presentation.AssemblyInfo.cs
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\WebApplication1.Presentation.csproj.CoreCompileInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\WebAppli.122EF702.Up2Date
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\WebApplication1.Presentation.dll
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\refint\WebApplication1.Presentation.dll
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\WebApplication1.Presentation.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\ref\WebApplication1.Presentation.dll

@@ -1984,7 +1984,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Service.Contracts": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WebApplication1.Presentation.dll": {}

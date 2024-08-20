@@ -46,6 +46,8 @@ namespace WebApplication1
 
             app.UseAuthorization();
 
+            /*
+             * Pipeline middleware examples
             //app.Use(async (context, next) =>
             //{
             //    Console.WriteLine("Logic before executing the next delegate in the Use method.");
@@ -83,7 +85,11 @@ namespace WebApplication1
             //    Console.WriteLine("Writing the response to the client");
             //    context.Response.StatusCode = 200;
             //    await context.Response.WriteAsync("Hello from the middleware component.");
-            //});
+            //});*/
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.MapControllers();
 
