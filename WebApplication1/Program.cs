@@ -1,18 +1,24 @@
 using Microsoft.AspNetCore.HttpOverrides;
 using WebApplication1.Extensions;
+using NLog;
 
 namespace WebApplication1
 {
     public class Program
     {
+        [Obsolete]
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
 
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),
+                 "/nlog.config"));
+
             builder.Services.ConfigureCors();
             builder.Services.ConfigureIISIntegration();
+            builder.Services.ConfigureLoggerService();
 
             builder.Services.AddControllers();
 

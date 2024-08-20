@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Contracts;
+using LoggerService;
+using Microsoft.AspNetCore.Builder;
 
 namespace WebApplication1.Extensions
 {
@@ -23,5 +25,8 @@ namespace WebApplication1.Extensions
             {
 
             });
+
+        public static void ConfigureLoggerService(this IServiceCollection services) =>
+            services.AddSingleton<ILoggerManager, LoggerManager>();
     }
 }
