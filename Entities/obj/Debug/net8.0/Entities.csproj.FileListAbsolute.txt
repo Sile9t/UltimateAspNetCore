@@ -1,0 +1,11 @@
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\bin\Debug\net8.0\Entities.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\obj\Debug\net8.0\Entities.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\Entities\obj\Debug\net8.0\ref\Entities.dll
