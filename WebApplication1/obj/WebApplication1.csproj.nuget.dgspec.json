@@ -103,7 +103,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\UltimateAspNeet\\WebApplication1\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -386,7 +390,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\UltimateAspNeet\\WebApplication1\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
