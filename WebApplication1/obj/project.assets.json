@@ -1568,6 +1568,16 @@
           "bin/placeholder/LoggerService.dll": {}
         }
       },
+      "Presentation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Presentation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Presentation.dll": {}
+        }
+      },
       "Repository/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4267,6 +4277,11 @@
       "path": "../LoggerService/LoggerService.csproj",
       "msbuildProject": "../LoggerService/LoggerService.csproj"
     },
+    "Presentation/1.0.0": {
+      "type": "project",
+      "path": "../CompanyEmployees.Presentation/Presentation.csproj",
+      "msbuildProject": "../CompanyEmployees.Presentation/Presentation.csproj"
+    },
     "Repository/1.0.0": {
       "type": "project",
       "path": "../Repository/Repository.csproj",
@@ -4289,6 +4304,7 @@
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
+      "Presentation >= 1.0.0",
       "Repository >= 1.0.0",
       "Service >= 1.0.0",
       "Service.Contracts >= 1.0.0"
@@ -4327,6 +4343,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\Presentation.csproj": {
+              "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\Presentation.csproj"
+            },
             "C:\\Projects\\UltimateAspNeet\\WebApplication1\\LoggerService\\LoggerService.csproj": {
               "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\LoggerService\\LoggerService.csproj"
             },

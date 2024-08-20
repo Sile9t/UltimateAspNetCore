@@ -23,7 +23,8 @@ namespace WebApplication1
             builder.Services.ConfigureRepositoryManager();
             builder.Services.ConfigureServiceManager();
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+                .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 
             var app = builder.Build();
 
