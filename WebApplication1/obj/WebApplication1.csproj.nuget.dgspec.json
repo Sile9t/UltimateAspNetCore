@@ -4,12 +4,12 @@
     "C:\\Projects\\UltimateAspNeet\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\Presentation.csproj": {
+    "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\WebApplication1.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\Presentation.csproj",
-        "projectName": "Presentation",
-        "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\WebApplication1.Presentation.csproj",
+        "projectName": "WebApplication1.Presentation",
+        "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\WebApplication1.Presentation.csproj",
         "packagesPath": "C:\\Users\\Sile9t\\.nuget\\packages\\",
         "outputPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\obj\\",
         "projectStyle": "PackageReference",
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -518,8 +524,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\Presentation.csproj": {
-                "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\Presentation.csproj"
+              "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\WebApplication1.Presentation.csproj": {
+                "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\CompanyEmployees.Presentation\\WebApplication1.Presentation.csproj"
               },
               "C:\\Projects\\UltimateAspNeet\\WebApplication1\\LoggerService\\LoggerService.csproj": {
                 "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\LoggerService\\LoggerService.csproj"
