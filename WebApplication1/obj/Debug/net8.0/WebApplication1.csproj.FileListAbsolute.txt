@@ -24,3 +24,12 @@ C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\obj\Debug\net8.0\ref
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\nlog.config
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\NLog.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Contracts.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\LoggerService.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\LoggerService.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Contracts.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.AssemblyReference.cache
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\obj\Debug\net8.0\WebAppli.7D14BD69.Up2Date
