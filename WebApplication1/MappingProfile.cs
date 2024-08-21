@@ -8,9 +8,8 @@ namespace WebApplication1
     {
         public MappingProfile()
         {
-            CreateMap<Company, CompanyDto>().ForMember(
-                x => x.FullAddress, opt => opt.MapFrom(
-                    s => string.Join(' ', s.Address, s.Country)));
+            CreateMap<Company, CompanyDto>().ForCtorParam("FullAddress",
+                opt => opt.MapFrom(s => string.Join(' ', s.Address, s.Country)));
         }
     }
 }
