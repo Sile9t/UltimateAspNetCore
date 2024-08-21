@@ -31,7 +31,10 @@ namespace WebApplication1
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-            builder.Services.AddControllers()
+            builder.Services.AddControllers(config =>
+            {
+                config.RespectBrowserAcceptHeader = true;
+            }).AddXmlDataContractSerializerFormatters()
                 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 
             var app = builder.Build();
