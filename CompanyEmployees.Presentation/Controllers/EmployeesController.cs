@@ -27,5 +27,18 @@ namespace WebApplication1.Presentation.Controllers
 
             return Ok(employee);
         }
+
+        [HttpPost]
+        public IActionResult CreateEmployeeForCompany(Guid companyId, [FromBody] EmployeeForCreationDto employee)
+        {
+            if (employee is null)
+                return BadRequest("EmployeeForCreationDto object is null");
+
+            var employeeToReturn = _service.EmployeeService.CreateEmployeeForCompany(companyId,
+                employee, trackChanges: false);
+
+            return CreatedAtRoute("GetEmployeeForCompany", new { companyId, id = employeeToReturn.Id },
+                employeeToReturn);
+        }
     }
 }
