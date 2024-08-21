@@ -54,7 +54,7 @@ namespace Service
         public IEnumerable<CompanyDto> GetByIds(IEnumerable<Guid> ids, bool trackChanges)
         {
             if (ids is null)
-                throw new IdParamentersBadRequestException();
+                throw new IdParametersBadRequestException();
 
             var companyEntities = _repository.Company.GetByIds(ids, trackChanges);
             if (ids.Count() != companyEntities.Count())
