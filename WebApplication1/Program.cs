@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.HttpOverrides;
 using WebApplication1.Extensions;
 using NLog;
+using Contracts;
 
 namespace WebApplication1
 {
@@ -29,12 +30,18 @@ namespace WebApplication1
 
             var app = builder.Build();
 
+            var logger = app.Services.GetRequiredService<ILoggerManager>();
+            app.ConfigureExceptionHandler(logger);
+
+            if (app.Environment.IsProduction())
+                app.UseHsts();
+
             // Configure the HTTP request pipeline.
 
-            if (app.Environment.IsDevelopment())
-                app.UseDeveloperExceptionPage();
-            else
-                app.UseHsts();
+            //if (app.Environment.IsDevelopment())
+            //    app.UseDeveloperExceptionPage();
+            //else
+            //    app.UseHsts();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
