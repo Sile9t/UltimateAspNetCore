@@ -24,9 +24,7 @@ namespace Service
             {
                 var companies = _repository.Company.GetAllCompanies(trackChanges);
 
-                var companiesDto = companies.Select(x =>
-                    new CompanyDto(x.Id, x.Name ?? "", string.Join(' ', x.Address, x.Country)))
-                    .ToList();
+                var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
 
                 return companiesDto;
             }

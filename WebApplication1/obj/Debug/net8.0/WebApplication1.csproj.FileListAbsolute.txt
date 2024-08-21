@@ -150,3 +150,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Ser
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Shared.dll
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Shared.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\AutoMapper.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
