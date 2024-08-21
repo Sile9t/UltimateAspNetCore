@@ -13,3 +13,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\S
 C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\refint\Service.Contracts.dll
 C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\Service.Contracts.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\obj\Debug\net8.0\ref\Service.Contracts.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\bin\Debug\net8.0\Shared.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Service.Contracts\bin\Debug\net8.0\Shared.pdb

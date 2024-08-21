@@ -15,3 +15,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\Repository\obj\Debug\net8.0\Reposito
 C:\Projects\UltimateAspNeet\WebApplication1\Repository\obj\Debug\net8.0\ref\Repository.dll
 C:\Projects\UltimateAspNeet\WebApplication1\Repository\bin\Debug\net8.0\Contracts.dll
 C:\Projects\UltimateAspNeet\WebApplication1\Repository\bin\Debug\net8.0\Contracts.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\Repository\bin\Debug\net8.0\Shared.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Repository\bin\Debug\net8.0\Shared.pdb

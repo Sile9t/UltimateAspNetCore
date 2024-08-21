@@ -15,3 +15,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\obj\Debug\net8.0\Logge
 C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\obj\Debug\net8.0\ref\LoggerService.dll
 C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\bin\Debug\net8.0\Entities.dll
 C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\bin\Debug\net8.0\Entities.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\bin\Debug\net8.0\Shared.dll
+C:\Projects\UltimateAspNeet\WebApplication1\LoggerService\bin\Debug\net8.0\Shared.pdb

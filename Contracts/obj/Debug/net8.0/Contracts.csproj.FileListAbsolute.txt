@@ -13,3 +13,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\Contracts\bin\Debug\net8.0\Entities.
 C:\Projects\UltimateAspNeet\WebApplication1\Contracts\bin\Debug\net8.0\Entities.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\Contracts\obj\Debug\net8.0\Contracts.csproj.AssemblyReference.cache
 C:\Projects\UltimateAspNeet\WebApplication1\Contracts\obj\Debug\net8.0\Contracts.csproj.Up2Date
+C:\Projects\UltimateAspNeet\WebApplication1\Contracts\bin\Debug\net8.0\Shared.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Contracts\bin\Debug\net8.0\Shared.pdb

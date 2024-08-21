@@ -17,3 +17,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\Service\obj\Debug\net8.0\Service.dll
 C:\Projects\UltimateAspNeet\WebApplication1\Service\obj\Debug\net8.0\refint\Service.dll
 C:\Projects\UltimateAspNeet\WebApplication1\Service\obj\Debug\net8.0\Service.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\Service\obj\Debug\net8.0\ref\Service.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Service\bin\Debug\net8.0\Shared.dll
+C:\Projects\UltimateAspNeet\WebApplication1\Service\bin\Debug\net8.0\Shared.pdb

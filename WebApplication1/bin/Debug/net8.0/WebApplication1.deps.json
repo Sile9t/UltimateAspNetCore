@@ -1023,7 +1023,8 @@
       },
       "Contracts/1.0.0": {
         "dependencies": {
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Contracts.dll": {}
@@ -1047,7 +1048,8 @@
         "dependencies": {
           "Contracts": "1.0.0",
           "Entities": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.8"
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Repository.dll": {}
@@ -1064,10 +1066,16 @@
       },
       "Service.Contracts/1.0.0": {
         "dependencies": {
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "Shared": "1.0.0"
         },
         "runtime": {
           "Service.Contracts.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "runtime": {
+          "Shared.dll": {}
         }
       },
       "WebApplication1.Presentation/1.0.0": {
@@ -1806,6 +1814,11 @@
       "sha512": ""
     },
     "Service.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
