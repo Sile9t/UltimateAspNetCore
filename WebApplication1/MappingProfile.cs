@@ -8,7 +8,7 @@ namespace WebApplication1
     {
         public MappingProfile()
         {
-            CreateMap<Company, CompanyDto>().ForCtorParam("FullAddress",
+            CreateMap<Company, CompanyDto>().ForMember(c => c.FullAddress,
                 opt => opt.MapFrom(s => string.Join(' ', s.Address, s.Country)));
             CreateMap<CompanyForCreationDto, Company>();
             CreateMap<CompanyForUpdateDto, Company>();
