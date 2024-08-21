@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.HttpOverrides;
 using WebApplication1.Extensions;
 using NLog;
 using Contracts;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1
 {
@@ -24,6 +25,11 @@ namespace WebApplication1
             builder.Services.ConfigureRepositoryManager();
             builder.Services.ConfigureServiceManager();
             builder.Services.AddAutoMapper(typeof(Program));
+
+            builder.Services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
 
             builder.Services.AddControllers()
                 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);

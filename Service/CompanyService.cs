@@ -46,7 +46,7 @@ namespace Service
             _repository.Company.CreateCompany(companyEntity);
             _repository.Save();
 
-            var companyToReturn = _mapper.Map<CompanyDto>(company);
+            var companyToReturn = _mapper.Map<CompanyDto>(companyEntity);
 
             return companyToReturn;
         }
