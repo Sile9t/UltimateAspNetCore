@@ -1,5 +1,6 @@
 ﻿using Contracts.Repositories;
 using Entities;
+using Shared.Dtos;
 
 namespace Repository
 {
@@ -13,5 +14,9 @@ namespace Repository
             FindAll(trackChanges)
                 .OrderBy(x => x.Name)
                 .ToList();
+
+        public Company GetCompany(Guid companyId, bool trackChanges) =>
+            FindByCondition(x => x.Id.Equals(companyId), trackChanges)
+                .SingleOrDefault();
     }
 }
