@@ -152,3 +152,7 @@ C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Sha
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Shared.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\AutoMapper.dll
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
