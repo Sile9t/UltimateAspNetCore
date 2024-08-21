@@ -36,6 +36,7 @@ namespace WebApplication1
                 config.RespectBrowserAcceptHeader = true;
                 config.ReturnHttpNotAcceptable = true;
             }).AddXmlDataContractSerializerFormatters()
+                .AddCustomCsvFormatter()
                 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 
             var app = builder.Build();
