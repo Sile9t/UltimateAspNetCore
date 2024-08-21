@@ -3,11 +3,19 @@ using WebApplication1.Extensions;
 using NLog;
 using Contracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Extensions.Options;
 
 namespace WebApplication1
 {
     public class Program
     {
+        static NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
+            new ServiceCollection().AddLogging().AddMvc().AddNewtonsoftJson()
+                .Services.BuildServiceProvider()
+                .GetRequiredService<IOptions<MvcOptions>>().Value.InputFormatters.
+                OfType<NewtonsoftJsonPatchInputFormatter>().First();
+
         [Obsolete]
         public static void Main(string[] args)
         {
@@ -35,6 +43,7 @@ namespace WebApplication1
             {
                 config.RespectBrowserAcceptHeader = true;
                 config.ReturnHttpNotAcceptable = true;
+                config.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
             }).AddXmlDataContractSerializerFormatters()
                 .AddCustomCsvFormatter()
                 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);

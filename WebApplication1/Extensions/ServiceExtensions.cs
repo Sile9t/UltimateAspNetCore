@@ -44,6 +44,6 @@ namespace WebApplication1.Extensions
             services.AddScoped<IServiceManager, ServiceManager>();
 
         public static IMvcBuilder AddCustomCsvFormatter(this IMvcBuilder builder) =>
-            builder.AddMvcOptions(config => config.OutputFormatters.Add(new CsvOutputFormatter());
+            builder.AddMvcOptions(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
     }
 }
