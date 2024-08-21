@@ -47,5 +47,14 @@ namespace WebApplication1.Presentation.Controllers
 
             return Ok(companies);
         }
+
+        [HttpGet("collection")]
+        public IActionResult CreateCompanyCollection(
+            [FromBody] IEnumerable<CompanyForCreationDto> companyCollection)
+        {
+            var result = _service.CompanyService.CreateCompanyCollection(companyCollection);
+
+            return CreatedAtRoute("CompanyCollection", new { result.ids }, result.companies);
+        }
     }
 }
