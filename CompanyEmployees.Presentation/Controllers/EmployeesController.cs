@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
+using Shared.Dtos;
 
 namespace WebApplication1.Presentation.Controllers
 {
@@ -10,5 +11,12 @@ namespace WebApplication1.Presentation.Controllers
         private readonly IServiceManager _service;
 
         public EmployeesController(IServiceManager service) => _service = service;
+
+        public IActionResult GetEmployeesForCompany(Guid companyId)
+        {
+            var employees = _service.EmployeeService.GetEmployees(companyId, trackChanges: false);
+
+            return Ok(employees);
+        }
     }
 }
