@@ -11,9 +11,11 @@ namespace WebApplication1
             CreateMap<Company, CompanyDto>().ForCtorParam("FullAddress",
                 opt => opt.MapFrom(s => string.Join(' ', s.Address, s.Country)));
             CreateMap<CompanyForCreationDto, Company>();
+            CreateMap<CompanyForCreationDto, Company>();
 
             CreateMap<Employee, EmployeeDto>();
             CreateMap<EmployeeForCreationDto, Employee>();
+            CreateMap<EmployeeForUpdateDto, Employee>();
         }
     }
 }
