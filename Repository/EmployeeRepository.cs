@@ -19,15 +19,16 @@ namespace Repository
                 trackChanges)
                 .FilterEmployeesByAge(employeeParameters.MinAge, employeeParameters.MaxAge)
                 .Search(employeeParameters.SearchTerm)
-                .OrderBy(e => e.Name)
+                .ToList();
+
+            var count = employees.Count();
+
+            var employeesForPage = employees.OrderBy(e => e.Name)
                 .Skip((employeeParameters.PageNumber - 1) * employeeParameters.PageSize)
                 .Take(employeeParameters.PageSize)
                 .ToList();
 
-            var count = await FindByCondition(e => e.CompanyId.Equals(companyId),
-                trackChanges).CountAsync();
-
-            return new PagedList<Employee>(employees, count, employeeParameters.PageNumber,
+            return new PagedList<Employee>(employeesForPage, count, employeeParameters.PageNumber,
                 employeeParameters.PageSize);
         }
 
