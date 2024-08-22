@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.Dtos;
 using Shared.RequestFeatures;
+using System.Text.Json;
 
 namespace WebApplication1.Presentation.Controllers
 {
@@ -22,7 +23,10 @@ namespace WebApplication1.Presentation.Controllers
             var pagedResult = await _service.EmployeeService.GetEmployeesAsync(companyId,
                  employeeParameters, trackChanges: false);
 
-            return Ok(pagedResult);
+            Response.Headers.Add("X-Pagination", 
+                JsonSerializer.Serialize(pagedResult.metaData));
+
+            return Ok(pagedResult.employees);
         }
 
         [HttpGet("{id:guid}", Name = "GetEmployeeForCompany")]
