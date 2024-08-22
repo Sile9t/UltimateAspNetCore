@@ -20,7 +20,7 @@ namespace Service
             _mapper = mapper;
         }
 
-        public async Task<(IEnumerable<EmployeeDto>, MetaData metaData)> GetEmployeesAsync(Guid companyId,
+        public async Task<(IEnumerable<EmployeeDto> employees, MetaData metaData)> GetEmployeesAsync(Guid companyId,
             EmployeeParameters employeeParameters, bool trackChanges)
         {
             await CheckIfCompanyExists(companyId, trackChanges);

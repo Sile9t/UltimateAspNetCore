@@ -19,10 +19,10 @@ namespace WebApplication1.Presentation.Controllers
         public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, 
             [FromQuery] EmployeeParameters employeeParameters)
         {
-            var employees = await _service.EmployeeService.GetEmployeesAsync(companyId,
+            var pagedResult = await _service.EmployeeService.GetEmployeesAsync(companyId,
                  employeeParameters, trackChanges: false);
 
-            return Ok(employees);
+            return Ok(pagedResult);
         }
 
         [HttpGet("{id:guid}", Name = "GetEmployeeForCompany")]
