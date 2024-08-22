@@ -79,6 +79,9 @@ namespace WebApplication1.Presentation.Controllers
             if (company is null)
                 return BadRequest("CompanyForUpdateDto object is null");
 
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
+
             await _service.CompanyService.UpdateCompanyAsync(id, company, trackChanges: true);
 
             return NoContent();
