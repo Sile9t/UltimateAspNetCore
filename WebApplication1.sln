@@ -9,17 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Cont
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{7EBA1D34-9896-409D-BF6D-06BFC6F2E7BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{3D2A40CA-0359-4E2A-A342-2777DDAADB76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{3D2A40CA-0359-4E2A-A342-2777DDAADB76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{4ACA62AF-4AAB-42EA-A6AC-496C89C47F77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{4ACA62AF-4AAB-42EA-A6AC-496C89C47F77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{8D05D987-CA36-4B76-8EED-D804DAF8A762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{8D05D987-CA36-4B76-8EED-D804DAF8A762}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{1253BCCE-0F7A-4127-B025-B954965162EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{1253BCCE-0F7A-4127-B025-B954965162EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1.Presentation", "CompanyEmployees.Presentation\WebApplication1.Presentation.csproj", "{43BBF0C6-0B85-4838-BDBF-4A2A55210996}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1.Presentation", "CompanyEmployees.Presentation\WebApplication1.Presentation.csproj", "{43BBF0C6-0B85-4838-BDBF-4A2A55210996}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{1BAC9D0B-41A5-4E5E-A518-60CE9B25B66C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{1BAC9D0B-41A5-4E5E-A518-60CE9B25B66C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

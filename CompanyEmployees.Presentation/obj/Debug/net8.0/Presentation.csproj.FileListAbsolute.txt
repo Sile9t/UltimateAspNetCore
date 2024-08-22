@@ -1,0 +1,5 @@
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\Presentation.csproj.AssemblyReference.cache
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\Presentation.AssemblyInfoInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\Presentation.AssemblyInfo.cs
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\Presentation.csproj.CoreCompileInputs.cache
