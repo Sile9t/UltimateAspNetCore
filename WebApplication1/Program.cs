@@ -5,6 +5,7 @@ using Contracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
+using WebApplication1.ActionFilters;
 
 namespace WebApplication1
 {
@@ -33,6 +34,8 @@ namespace WebApplication1
             builder.Services.ConfigureRepositoryManager();
             builder.Services.ConfigureServiceManager();
             builder.Services.AddAutoMapper(typeof(Program));
+
+            builder.Services.AddScoped<ValidationFilterAttribute>();
 
             builder.Services.Configure<ApiBehaviorOptions>(options =>
             {
