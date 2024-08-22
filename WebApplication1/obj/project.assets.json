@@ -2096,6 +2096,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "8.0.8",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.8",
           "Service.Contracts": "1.0.0"
         },
         "compile": {
@@ -5200,7 +5201,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "LoggerService >= 1.0.0",
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 8.0.8",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
@@ -5276,10 +5276,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-            "target": "Package",
-            "version": "[8.0.8, )"
-          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.8, )"
