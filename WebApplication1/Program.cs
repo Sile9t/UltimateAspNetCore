@@ -13,8 +13,8 @@ namespace WebApplication1
         static NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
             new ServiceCollection().AddLogging().AddMvc().AddNewtonsoftJson()
                 .Services.BuildServiceProvider()
-                .GetRequiredService<IOptions<MvcOptions>>().Value.InputFormatters.
-                OfType<NewtonsoftJsonPatchInputFormatter>().First();
+                .GetRequiredService<IOptions<MvcOptions>>().Value.InputFormatters
+                .OfType<NewtonsoftJsonPatchInputFormatter>().First();
 
         [Obsolete]
         public static void Main(string[] args)
@@ -44,7 +44,8 @@ namespace WebApplication1
                 config.RespectBrowserAcceptHeader = true;
                 config.ReturnHttpNotAcceptable = true;
                 config.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
-            }).AddXmlDataContractSerializerFormatters()
+            })
+                .AddXmlDataContractSerializerFormatters()
                 .AddCustomCsvFormatter()
                 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 
