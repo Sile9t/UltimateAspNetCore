@@ -16,7 +16,8 @@ namespace WebApplication1.Presentation.Controllers
         public EmployeesController(IServiceManager service) => _service = service;
 
         [HttpGet]
-        public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, EmployeeParameters employeeParameters)
+        public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, 
+            [FromQuery] EmployeeParameters employeeParameters)
         {
             var employees = await _service.EmployeeService.GetEmployeesAsync(companyId,
                  employeeParameters, trackChanges: false);
@@ -25,8 +26,7 @@ namespace WebApplication1.Presentation.Controllers
         }
 
         [HttpGet("{id:guid}", Name = "GetEmployeeForCompany")]
-        public async Task<IActionResult> GetEmployeeForCompany(Guid companyId,
-            Guid id, [FromQuery] EmployeeParameters employeeParameters)
+        public async Task<IActionResult> GetEmployeeForCompany(Guid companyId, Guid id)
         {
             var employee = await _service.EmployeeService.GetEmployeeAsync(companyId, id, trackChanges: false);
 
