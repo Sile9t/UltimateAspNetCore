@@ -1,0 +1,12 @@
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\bin\Debug\net8.0\ActionFilters.deps.json
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\bin\Debug\net8.0\ActionFilters.dll
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\bin\Debug\net8.0\ActionFilters.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\ActionFilters.csproj.AssemblyReference.cache
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\ActionFilters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\ActionFilters.AssemblyInfoInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\ActionFilters.AssemblyInfo.cs
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\ActionFilters.csproj.CoreCompileInputs.cache
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\ActionFilters.dll
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\refint\ActionFilters.dll
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\ActionFilters.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\ActionFilters\obj\Debug\net8.0\ref\ActionFilters.dll

@@ -5,7 +5,7 @@ using Contracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
-using WebApplication1.ActionFilters;
+using ActionFilters;
 
 namespace WebApplication1
 {

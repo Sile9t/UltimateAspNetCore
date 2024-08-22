@@ -17,3 +17,5 @@ C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\De
 C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\obj\Debug\net8.0\ref\WebApplication1.Presentation.dll
 C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\Shared.dll
 C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\Shared.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\ActionFilters.dll
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\ActionFilters.pdb

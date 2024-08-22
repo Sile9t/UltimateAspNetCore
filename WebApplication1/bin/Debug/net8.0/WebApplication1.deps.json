@@ -1088,6 +1088,14 @@
           }
         }
       },
+      "ActionFilters/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "runtime": {
+          "ActionFilters.dll": {}
+        }
+      },
       "Contracts/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
@@ -1148,6 +1156,7 @@
       },
       "WebApplication1.Presentation/1.0.0": {
         "dependencies": {
+          "ActionFilters": "1.0.0",
           "Microsoft.AspNetCore.JsonPatch": "8.0.8",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.8",
@@ -1899,6 +1908,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "ActionFilters/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Contracts/1.0.0": {
       "type": "project",
