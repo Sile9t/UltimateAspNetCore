@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
 using ActionFilters;
+using Shared.Dtos;
+using Service.DataShaping;
 
 namespace WebApplication1
 {
@@ -36,6 +38,7 @@ namespace WebApplication1
             builder.Services.AddAutoMapper(typeof(Program));
 
             builder.Services.AddScoped<ValidationFilterAttribute>();
+            builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
 
             builder.Services.Configure<ApiBehaviorOptions>(options =>
             {
