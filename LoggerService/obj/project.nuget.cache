@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Aj2MaG66Yd4=",
+  "dgSpecHash": "oYogv4iszIg=",
   "success": true,
   "projectFilePath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\LoggerService\\LoggerService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sile9t\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Sile9t\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Sile9t\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Sile9t\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\Sile9t\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
@@ -12,7 +14,8 @@
     "C:\\Users\\Sile9t\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\Sile9t\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Sile9t\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512",
-    "C:\\Users\\Sile9t\\.nuget\\packages\\nlog.extensions.logging\\5.3.12\\nlog.extensions.logging.5.3.12.nupkg.sha512"
+    "C:\\Users\\Sile9t\\.nuget\\packages\\nlog.extensions.logging\\5.3.12\\nlog.extensions.logging.5.3.12.nupkg.sha512",
+    "C:\\Users\\Sile9t\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
