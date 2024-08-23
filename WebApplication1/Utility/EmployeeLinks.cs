@@ -1,6 +1,8 @@
 ﻿using Contracts;
+using Entities;
 using Entities.LinkModels;
 using Shared.Dtos;
+using Microsoft.Net.Http.Headers;
 
 namespace WebApplication1.Utility
 {
@@ -26,5 +28,21 @@ namespace WebApplication1.Utility
 
             return ReturnShapedEmployees(shapedEmployees);
         }
+
+        private List<Entity> ShapeData(IEnumerable<EmployeeDto> employeesDto, string fields)
+            => _dataShaper.ShapeData(employeesDto, fields)
+                    .Select(e => e.Entity)
+                    .ToList();
+
+        private bool ShouldGenerateLinks(HttpContext httpContext)
+        {
+            var mediaType = (MediaTypeHeaderValue)httpContext.Items["AcceptHeaderMediaType"]!;
+
+            return mediaType.SubTypeWithoutSuffix.EndsWith("hateaos",
+                StringComparison.InvariantCultureIgnoreCase);
+        }
+
+        private LinkResponse ReturnShapedEmployees(List<Entity> shapedEmployees) =>
+            new LinkResponse { ShapedEntities = shapedEmployees };
     }
 }
