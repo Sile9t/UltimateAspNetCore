@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Entities.LinkModels;
 using Shared.Dtos;
 using Shared.RequestFeatures;
 using System.Dynamic;
@@ -7,8 +8,8 @@ namespace Service.Contracts
 {
     public interface IEmployeeService
     {
-        Task<(IEnumerable<ShapedEntity> employees, MetaData metaData)> GetEmployeesAsync(Guid companyId,
-            EmployeeParameters employeeParameters, bool trackChanges);
+        Task<(LinkResponse linkResponse, MetaData metaData)> GetEmployeesAsync(Guid companyId,
+            LinkParameters linkParameters, bool trackChanges);
         Task<EmployeeDto> GetEmployeeAsync(Guid companyId, Guid id, bool trackChanges);
         Task<EmployeeDto> CreateEmployeeForCompanyAsync(Guid companyId,
             EmployeeForCreationDto employeeForCreationDto, bool trackChanges);
