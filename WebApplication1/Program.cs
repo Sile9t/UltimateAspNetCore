@@ -36,6 +36,7 @@ namespace WebApplication1
             builder.Services.ConfigureRepositoryManager();
             builder.Services.ConfigureServiceManager();
             builder.Services.AddAutoMapper(typeof(Program));
+            builder.Services.AddCustomMediaTypes();
 
             builder.Services.AddScoped<ValidationFilterAttribute>();
             builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
