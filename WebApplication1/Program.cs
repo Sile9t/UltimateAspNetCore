@@ -39,6 +39,7 @@ namespace WebApplication1
             builder.Services.AddCustomMediaTypes();
 
             builder.Services.AddScoped<ValidationFilterAttribute>();
+            builder.Services.AddScoped<ValidateMediaTypeAttribute>();
             builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
 
             builder.Services.Configure<ApiBehaviorOptions>(options =>
