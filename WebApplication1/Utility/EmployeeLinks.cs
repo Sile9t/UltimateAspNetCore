@@ -1,4 +1,5 @@
 ﻿using Contracts;
+using Entities.LinkModels;
 using Shared.Dtos;
 
 namespace WebApplication1.Utility
@@ -12,6 +13,18 @@ namespace WebApplication1.Utility
         {
             _linkGenerator = linkGenerator;
             _dataShaper = dataShaper;
+        }
+
+        public LinkResponse TryGenerateLinks(IEnumerable<EmployeeDto> employeesDto,
+            string fields, Guid companyId, HttpContext httpContext)
+        {
+            var shapedEmployees = ShapeData(employeesDto, fields);
+
+            if (ShouldGenerateLinks(httpContext))
+                return ReturnLinkedEmployees(employeesDto, fields, companyId, httpContext,
+                    shapedEmployees);
+
+            return ReturnShapedEmployees(shapedEmployees);
         }
     }
 }
