@@ -17,7 +17,7 @@ namespace Service
         private readonly IMapper _mapper;
         private readonly IDataShaper<EmployeeDto> _dataShaper;
         public EmployeeService(IRepositoryManager repository, 
-            ILoggerManager logger, IMapper mapper, DataShaper<EmployeeDto> dataShaper)
+            ILoggerManager logger, IMapper mapper, IDataShaper<EmployeeDto> dataShaper)
         {
             _repository = repository;
             _logger = logger;
