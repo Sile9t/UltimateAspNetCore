@@ -158,3 +158,4 @@ C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\New
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\ActionFilters.dll
 C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\ActionFilters.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\WebApplication1\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll
