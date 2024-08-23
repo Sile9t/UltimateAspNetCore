@@ -2,6 +2,8 @@
 {
     public class EmployeeParameters : RequestParameters
     {
+        public EmployeeParameters() => OrderBy = "Name";
+
         public uint MinAge { get; set; }
         public uint MaxAge { get; set; } = int.MaxValue;
 
