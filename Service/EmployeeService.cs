@@ -3,6 +3,7 @@ using Contracts;
 using Entities;
 using Entities.Exceptions;
 using Service.Contracts;
+using Service.DataShaping;
 using Shared.Dtos;
 using Shared.RequestFeatures;
 
@@ -13,11 +14,14 @@ namespace Service
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
-        public EmployeeService(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        private readonly IDataShaper<EmployeeDto> _dataShaper;
+        public EmployeeService(IRepositoryManager repository, 
+            ILoggerManager logger, IMapper mapper, DataShaper<EmployeeDto> dataShaper)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
+            _dataShaper = dataShaper;
         }
 
         public async Task<(IEnumerable<EmployeeDto> employees, MetaData metaData)> GetEmployeesAsync(Guid companyId,
