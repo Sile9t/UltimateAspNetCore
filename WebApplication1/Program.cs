@@ -8,6 +8,7 @@ using Microsoft.Extensions.Options;
 using ActionFilters;
 using Shared.Dtos;
 using Service.DataShaping;
+using WebApplication1.Utility;
 
 namespace WebApplication1
 {
@@ -41,6 +42,7 @@ namespace WebApplication1
             builder.Services.AddScoped<ValidationFilterAttribute>();
             builder.Services.AddScoped<ValidateMediaTypeAttribute>();
             builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
+            builder.Services.AddScoped<IEmployeeLinks, EmployeeLinks>();
 
             builder.Services.Configure<ApiBehaviorOptions>(options =>
             {

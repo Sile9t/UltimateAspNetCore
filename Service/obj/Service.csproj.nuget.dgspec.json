@@ -110,7 +110,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\UltimateAspNeet\\WebApplication1\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Projects\\UltimateAspNeet\\WebApplication1\\Shared\\Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -127,6 +131,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
