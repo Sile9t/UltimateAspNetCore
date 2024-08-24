@@ -46,6 +46,8 @@ namespace WebApplication1
             builder.Services.ConfigureResponseCaching();
             builder.Services.ConfigureHttpCacheHeaders();
 
+            builder.Services.AddMemoryCache();
+
             builder.Services.AddControllers(config =>
             {
                 config.RespectBrowserAcceptHeader = true;
