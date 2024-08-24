@@ -95,5 +95,8 @@ namespace WebApplication1.Extensions
                     .HasApiVersion(new ApiVersion(2, 0));
             });
         }
+
+        public static void ConfigureResponseCaching(this IServiceCollection services) =>
+            services.AddResponseCaching();
     }
 }

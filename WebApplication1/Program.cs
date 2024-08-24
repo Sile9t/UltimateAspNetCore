@@ -43,11 +43,17 @@ namespace WebApplication1
 
             builder.Services.ConfigureVersioning();
 
+            builder.Services.ConfigureResponseCaching();
+
             builder.Services.AddControllers(config =>
             {
                 config.RespectBrowserAcceptHeader = true;
                 config.ReturnHttpNotAcceptable = true;
                 config.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
+                config.CacheProfiles.Add("120SecondsDuration", new CacheProfile
+                {
+                    Duration = 120
+                });
             })
                 .AddXmlDataContractSerializerFormatters()
                 .AddCustomCsvFormatter()
@@ -89,6 +95,7 @@ namespace WebApplication1
             });
 
             app.UseCors("CorsPolicy");
+            app.UseResponseCaching();
 
             app.UseAuthorization();
 
