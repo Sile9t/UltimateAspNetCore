@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Repository;
 using Service;
 using Service.Contracts;
+using WebApplication1.Presentation.Controllers;
 
 namespace WebApplication1.Extensions
 {
@@ -87,6 +88,11 @@ namespace WebApplication1.Extensions
                 opt.AssumeDefaultVersionWhenUnspecified = true;
                 opt.DefaultApiVersion = new ApiVersion(1, 0);
                 opt.ApiVersionReader = new HeaderApiVersionReader("api-version");
+
+                opt.Conventions.Controller<CompaniesController>()
+                    .HasApiVersion(new ApiVersion(1, 0));
+                opt.Conventions.Controller<CompaniesV2Controller>()
+                    .HasApiVersion(new ApiVersion(2, 0));
             });
         }
     }
