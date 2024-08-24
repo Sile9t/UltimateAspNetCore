@@ -79,7 +79,7 @@ namespace WebApplication1.Presentation.Controllers
         }
 
         [HttpOptions]
-        public IActionResult GetCompniesCoptions()
+        public IActionResult GetCompaniesOptions()
         {
             Response.Headers.Add("Allow", "GET, OPTIONS, POST");
 

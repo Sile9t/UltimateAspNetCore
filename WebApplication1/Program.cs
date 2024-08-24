@@ -37,10 +37,7 @@ namespace WebApplication1
             builder.Services.ConfigureRepositoryManager();
             builder.Services.ConfigureServiceManager();
             builder.Services.AddAutoMapper(typeof(Program));
-            builder.Services.AddCustomMediaTypes();
 
-            builder.Services.AddScoped<ValidationFilterAttribute>();
-            builder.Services.AddScoped<ValidateMediaTypeAttribute>();
             builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
             builder.Services.AddScoped<IEmployeeLinks, EmployeeLinks>();
 
@@ -59,6 +56,14 @@ namespace WebApplication1
                 .AddCustomCsvFormatter()
                 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 
+            builder.Services.AddCustomMediaTypes();
+
+            builder.Services.AddScoped<ValidationFilterAttribute>();
+            builder.Services.AddScoped<ValidateMediaTypeAttribute>();
+
+            builder.Services.AddControllers().AddApplicationPart(typeof(
+                WebApplication1.Presentation.AssemblyReference).Assembly);
+            
             var app = builder.Build();
 
             var logger = app.Services.GetRequiredService<ILoggerManager>();
