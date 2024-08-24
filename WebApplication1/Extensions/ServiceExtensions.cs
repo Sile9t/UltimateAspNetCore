@@ -60,6 +60,8 @@ namespace WebApplication1.Extensions
                 {
                     systemTextJsonOutputFormatter.SupportedMediaTypes
                         .Add("application/vnd.codemaze.hateoas+json");
+                    systemTextJsonOutputFormatter.SupportedMediaTypes
+                        .Add("application/vnd.codemaze.apiroot+json");
                 }
 
                 var xmlOutputFormatter = config.OutputFormatters
@@ -70,6 +72,8 @@ namespace WebApplication1.Extensions
                 {
                     xmlOutputFormatter.SupportedMediaTypes
                         .Add("application/vnd.codemaze.hateaos+xml");
+                    xmlOutputFormatter.SupportedMediaTypes
+                        .Add("application/vnd.codemaze.apiroot+xml");
                 }
             });
         }
