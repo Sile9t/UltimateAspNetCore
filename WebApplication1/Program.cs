@@ -41,10 +41,7 @@ namespace WebApplication1
             builder.Services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
             builder.Services.AddScoped<IEmployeeLinks, EmployeeLinks>();
 
-            builder.Services.Configure<ApiBehaviorOptions>(options =>
-            {
-                options.SuppressModelStateInvalidFilter = true;
-            });
+            builder.Services.ConfigureVersioning();
 
             builder.Services.AddControllers(config =>
             {
@@ -57,6 +54,11 @@ namespace WebApplication1
                 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
 
             builder.Services.AddCustomMediaTypes();
+
+            builder.Services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
 
             builder.Services.AddScoped<ValidationFilterAttribute>();
             builder.Services.AddScoped<ValidateMediaTypeAttribute>();
