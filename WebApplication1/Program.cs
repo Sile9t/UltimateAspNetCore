@@ -9,6 +9,7 @@ using ActionFilters;
 using Shared.Dtos;
 using Service.DataShaping;
 using WebApplication1.Utility;
+using AspNetCoreRateLimit;
 
 namespace WebApplication1
 {
@@ -47,6 +48,8 @@ namespace WebApplication1
             builder.Services.ConfigureHttpCacheHeaders();
 
             builder.Services.AddMemoryCache();
+            builder.Services.ConfigureRateLimitingOptions();
+            builder.Services.AddHttpContextAccessor();
 
             builder.Services.AddControllers(config =>
             {
@@ -100,6 +103,8 @@ namespace WebApplication1
             app.UseCors("CorsPolicy");
             app.UseResponseCaching();
             app.UseHttpCacheHeaders();
+
+            app.UseIpRateLimiting();
 
             app.UseAuthorization();
 
