@@ -77,5 +77,13 @@ namespace WebApplication1.Presentation.Controllers
 
             return NoContent();
         }
+
+        [HttpOptions]
+        public IActionResult GetCompniesCoptions()
+        {
+            Response.Headers.Add("Allow", "GET, OPTIONS, POST");
+
+            return Ok();
+        }
     }
 }
