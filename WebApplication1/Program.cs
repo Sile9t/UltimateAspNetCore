@@ -44,6 +44,7 @@ namespace WebApplication1
             builder.Services.ConfigureVersioning();
 
             builder.Services.ConfigureResponseCaching();
+            builder.Services.ConfigureHttpCacheHeaders();
 
             builder.Services.AddControllers(config =>
             {
@@ -96,6 +97,7 @@ namespace WebApplication1
 
             app.UseCors("CorsPolicy");
             app.UseResponseCaching();
+            app.UseHttpCacheHeaders();
 
             app.UseAuthorization();
 
