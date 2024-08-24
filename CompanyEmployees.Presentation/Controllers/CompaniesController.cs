@@ -1,4 +1,5 @@
 ﻿using ActionFilters;
+using Marvin.Cache.Headers;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.Dtos;
@@ -28,6 +29,8 @@ namespace WebApplication1.Presentation.Controllers
 
         [HttpGet("{id:guid}", Name = "CompanyById")]
         //[ResponseCache(Duration = 60)]
+        //[HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 60)]
+        //[HttpCacheValidation(MustRevalidate = false)]
         public async Task<IActionResult> GetCompany(Guid id)
         {
             var company = await _service.CompanyService.GetCompanyAsync(id,
