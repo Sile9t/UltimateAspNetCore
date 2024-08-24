@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using System.Net.Http.Headers;
+using Microsoft.Net.Http.Headers;
 
 namespace ActionFilters
 {

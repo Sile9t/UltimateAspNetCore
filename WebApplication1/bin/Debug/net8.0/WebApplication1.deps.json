@@ -1107,6 +1107,7 @@
       "Contracts/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Shared": "1.0.0"
         },
         "runtime": {
@@ -1114,6 +1115,10 @@
         }
       },
       "Entities/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Shared": "1.0.0"
+        },
         "runtime": {
           "Entities.dll": {}
         }
