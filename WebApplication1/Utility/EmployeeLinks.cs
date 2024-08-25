@@ -1,8 +1,8 @@
 ﻿using Contracts;
-using Entities;
 using Entities.LinkModels;
 using Shared.Dtos;
 using Microsoft.Net.Http.Headers;
+using Entities.Models;
 
 namespace WebApplication1.Utility
 {

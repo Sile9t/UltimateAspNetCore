@@ -1,4 +1,6 @@
-﻿namespace Entities.LinkModels
+﻿using Entities.Models;
+
+namespace Entities.LinkModels
 {
     public class LinkResponse
     {

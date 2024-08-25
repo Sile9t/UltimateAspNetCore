@@ -1,5 +1,5 @@
 ﻿using Contracts;
-using Entities;
+using Entities.Models;
 using System.Dynamic;
 using System.Reflection;
 
