@@ -32,7 +32,7 @@ namespace Service
                 userForRegistrationDto.Password);
 
             if (result.Succeeded)
-                await _userManager.AddToRoleAsync(user, userForRegistrationDto.Password);
+                await _userManager.AddToRolesAsync(user, userForRegistrationDto.Roles);
 
             return result;
         }

@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ActionFilters;
+using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.Dtos;
-using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Presentation.Controllers
 {
@@ -15,7 +15,7 @@ namespace WebApplication1.Presentation.Controllers
             _service = service;
 
         [HttpPost]
-        [ServiceFilter(typeof(ValidationAttribute))]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> RegisterUser([FromBody] UserForRegistrationDto userForRegistrationDto)
         {
             var result = await _service.AuthenticationService.RegisterUser(userForRegistrationDto);
