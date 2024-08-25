@@ -16,6 +16,8 @@ namespace WebApplication1
             CreateMap<Employee, EmployeeDto>();
             CreateMap<EmployeeForCreationDto, Employee>();
             CreateMap<EmployeeForUpdateDto, Employee>().ReverseMap();
+
+            CreateMap<UserForRegistrationDto, User>();
         }
     }
 }
