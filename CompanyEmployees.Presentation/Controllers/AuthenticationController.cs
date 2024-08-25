@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
+using Shared.Dtos;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Presentation.Controllers
 {
@@ -11,5 +13,20 @@ namespace WebApplication1.Presentation.Controllers
 
         public AuthenticationController(IServiceManager service) =>
             _service = service;
+
+        [HttpPost]
+        [ServiceFilter(typeof(ValidationAttribute))]
+        public async Task<IActionResult> RegisterUser([FromBody] UserForRegistrationDto userForRegistrationDto)
+        {
+            var result = await _service.AuthenticationService.RegisterUser(userForRegistrationDto);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                    ModelState.TryAddModelError(error.Code, error.Description);
+                return BadRequest(ModelState);
+            }
+
+            return StatusCode(201);
+        }
     }
 }
