@@ -53,6 +53,7 @@ namespace WebApplication1
 
             builder.Services.AddAuthentication();
             builder.Services.ConfigureIdentity();
+            builder.Services.ConfigureJWT(builder.Configuration);
 
             builder.Services.AddControllers(config =>
             {
