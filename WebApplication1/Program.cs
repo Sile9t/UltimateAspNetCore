@@ -109,6 +109,7 @@ namespace WebApplication1
 
             app.UseIpRateLimiting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             /*
