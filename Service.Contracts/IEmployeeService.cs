@@ -1,5 +1,5 @@
-﻿using Entities;
-using Entities.LinkModels;
+﻿using Entities.LinkModels;
+using Entities.Models;
 using Shared.Dtos;
 using Shared.RequestFeatures;
 using System.Dynamic;

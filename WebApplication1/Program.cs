@@ -51,6 +51,9 @@ namespace WebApplication1
             builder.Services.ConfigureRateLimitingOptions();
             builder.Services.AddHttpContextAccessor();
 
+            builder.Services.AddAuthentication();
+            builder.Services.ConfigureIdentity();
+
             builder.Services.AddControllers(config =>
             {
                 config.RespectBrowserAcceptHeader = true;
