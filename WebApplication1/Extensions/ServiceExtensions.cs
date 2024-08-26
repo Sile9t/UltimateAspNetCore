@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using NLog.LayoutRenderers;
 using Repository;
 using Service;
@@ -189,5 +190,14 @@ namespace WebApplication1.Extensions
 
         public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) =>
             services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
+
+        public static void ConfigureSwagger(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(s =>
+            {
+                s.SwaggerDoc("v1", new OpenApiInfo { Title = "Code Maze API", Version = "v1" });
+                s.SwaggerDoc("v2", new OpenApiInfo { Title = "Code Maze API", Version = "v2" });
+            });
+        }
     }
 }

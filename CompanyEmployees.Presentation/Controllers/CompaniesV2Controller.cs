@@ -6,6 +6,7 @@ namespace WebApplication1.Presentation.Controllers
     //[ApiVersion("2.0", Deprecated = true)]
     [Route("api/companies")]
     [ApiController]
+    [ApiExplorerSettings(GroupName = "v1")]
     public class CompaniesV2Controller : ControllerBase
     {
         private readonly IServiceManager _service;
