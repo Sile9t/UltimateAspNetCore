@@ -198,6 +198,15 @@ namespace WebApplication1.Extensions
                 s.SwaggerDoc("v1", new OpenApiInfo { Title = "Code Maze API", Version = "v1" });
                 s.SwaggerDoc("v2", new OpenApiInfo { Title = "Code Maze API", Version = "v2" });
 
+                s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Place to add JWT with Bearer",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+
                 s.AddSecurityRequirement(new OpenApiSecurityRequirement()
                 {
                     {
