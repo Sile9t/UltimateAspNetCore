@@ -26,13 +26,14 @@ namespace Service
         private User? _user;
 
         public AuthenticationService(ILoggerManager logger, IMapper mapper,
-            UserManager<User> userManager, IConfiguration configuration, JwtConfiguration jwtConfiguration)
+            UserManager<User> userManager, IConfiguration configuration)
         {
             _logger = logger;
             _mapper = mapper;
             _userManager = userManager;
             _configuration = configuration;
-            _jwtConfiguration = jwtConfiguration;
+            _jwtConfiguration = new JwtConfiguration();
+            _configuration.Bind(_jwtConfiguration.Section, _jwtConfiguration);
         }
 
         public async Task<IdentityResult> RegisterUser(UserForRegistrationDto userForRegistrationDto)
