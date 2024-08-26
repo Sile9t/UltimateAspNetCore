@@ -153,5 +153,17 @@ namespace Service
 
             return principal;
         }
+
+        public async Task<TokenDto> RefreshToken(TokenDto tokenDto)
+        {
+            var principal = GetPrincipalFromExpiredToken(tokenDto.AccessToken);
+
+            var user = await _userManager.FindByNameAsync(principal.Identity.Name);
+            if (user is null || user.RefreshToken != tokenDto.RefreshToken
+                || user.RefreshTokenExpiryTime <= DateTime.Now)
+                throw new RefreshTokenBadRequest();
+
+            return await CreateToken(populateExp: false);
+        }
     }
 }
