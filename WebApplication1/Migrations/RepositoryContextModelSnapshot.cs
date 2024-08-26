@@ -172,7 +172,7 @@ namespace WebApplication1.Migrations
                     b.Property<string>("RefreshToken")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("RefreshTokenExpityTime")
+                    b.Property<DateTime>("RefreshTokenExpiryTime")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("SecurityStamp")
@@ -227,13 +227,13 @@ namespace WebApplication1.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "8be614dd-63fd-4fb4-b7ed-62fd4b0e8170",
+                            Id = "fb051b83-d9fc-4ae1-b390-75d649a1bb96",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         },
                         new
                         {
-                            Id = "c7d5e947-40b2-4327-91a1-ab5ad130ae9c",
+                            Id = "453c8ac2-4408-496a-8ef5-1e1008998350",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
