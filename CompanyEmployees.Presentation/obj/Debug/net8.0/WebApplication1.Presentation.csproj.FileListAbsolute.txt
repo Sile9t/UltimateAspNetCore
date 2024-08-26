@@ -19,3 +19,4 @@ C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\De
 C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\Shared.pdb
 C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\ActionFilters.dll
 C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\ActionFilters.pdb
+C:\Projects\UltimateAspNeet\WebApplication1\CompanyEmployees.Presentation\bin\Debug\net8.0\WebApplication1.Presentation.xml
