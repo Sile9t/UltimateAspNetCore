@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Contracts;
+using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -65,6 +66,7 @@ namespace Service
             var refreshToken = GenerateRefreshToken();
 
             _user.RefreshToken = refreshToken;
+
             if (populateExp)
                 _user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
 
@@ -162,6 +164,8 @@ namespace Service
             if (user is null || user.RefreshToken != tokenDto.RefreshToken
                 || user.RefreshTokenExpiryTime <= DateTime.Now)
                 throw new RefreshTokenBadRequest();
+
+            _user = user;
 
             return await CreateToken(populateExp: false);
         }
