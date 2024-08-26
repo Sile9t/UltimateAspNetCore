@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ActionFilters")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6ac5b1fef436398a74de0a5ae3a00d6ea99919e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f064cc1d9d4bfd313ea48d45271ce98c3a7132b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ActionFilters")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ActionFilters")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
