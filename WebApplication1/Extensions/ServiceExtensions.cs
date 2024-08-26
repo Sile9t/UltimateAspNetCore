@@ -178,7 +178,7 @@ namespace WebApplication1.Extensions
                         ValidateIssuerSigningKey = true,
 
                         ValidIssuer = jwtSettings["validIssuer"],
-                        ValidAudience = jwtSettings["valildAudience"],
+                        ValidAudience = jwtSettings["validAudience"],
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
                     };
                 });
