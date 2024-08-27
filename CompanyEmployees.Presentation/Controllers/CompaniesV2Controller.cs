@@ -19,7 +19,7 @@ namespace WebApplication1.Presentation.Controllers
             var companies = await _service.CompanyService
                 .GetAllCompaniesAsync(trackChanges: false);
 
-            var companiesV2 = companies.Select(x => $"{x.Name} V2");
+            var companiesV2 = companies/*.Select(x => $"{x.Name} V2")*/;
 
             return Ok(companiesV2);
         }

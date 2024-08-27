@@ -1,4 +1,5 @@
 ﻿using ActionFilters;
+using Entities.Responses;
 using Marvin.Cache.Headers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,7 +14,7 @@ namespace WebApplication1.Presentation.Controllers
     [ApiController]
     //[ResponseCache(CacheProfileName = "120SecondsDuration")]
     [ApiExplorerSettings(GroupName = "v1")]
-    public class CompaniesController : ControllerBase
+    public class CompaniesController : ApiControllerBase
     {
         private readonly IServiceManager _service;
 
@@ -28,8 +29,12 @@ namespace WebApplication1.Presentation.Controllers
         [Authorize]
         public async Task<IActionResult> GetCompanies()
         {
-            var companies = await _service.CompanyService.GetAllCompaniesAsync(
-                trackChanges: false);
+            //var companies = await _service.CompanyService.GetAllCompaniesAsync(
+            //    trackChanges: false);
+
+            var baseResult = _service.CompanyService.GetAllCompaniesAsync(trackChanges: false).Result;
+
+            var companies = ((ApiOkResponse<IEnumerable<CompanyDto>>)baseResult).Result;
 
             return Ok(companies);
         }
@@ -40,8 +45,14 @@ namespace WebApplication1.Presentation.Controllers
         //[HttpCacheValidation(MustRevalidate = false)]
         public async Task<IActionResult> GetCompany(Guid id)
         {
-            var company = await _service.CompanyService.GetCompanyAsync(id,
-                trackChanges: false);
+            //var company = await _service.CompanyService.GetCompanyAsync(id,
+            //    trackChanges: false);
+
+            var baseResult = _service.CompanyService.GetCompanyAsync(id, trackChanges: false).Result;
+            if (!baseResult.Success)
+                return ProcessError(baseResult);
+
+            var company = ((ApiOkResponse<CompanyDto>)baseResult).Result;
 
             return Ok(company);
         }
