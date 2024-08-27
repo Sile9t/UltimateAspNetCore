@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.Dtos;
+using WebApplication1.Presentation.Extensions;
 using WebApplication1.Presentation.ModelBinder;
 
 namespace WebApplication1.Presentation.Controllers
@@ -34,7 +35,7 @@ namespace WebApplication1.Presentation.Controllers
 
             var baseResult = _service.CompanyService.GetAllCompaniesAsync(trackChanges: false).Result;
 
-            var companies = ((ApiOkResponse<IEnumerable<CompanyDto>>)baseResult).Result;
+            var companies = baseResult.GetResult<IEnumerable<CompanyDto>>();
 
             return Ok(companies);
         }
@@ -52,7 +53,7 @@ namespace WebApplication1.Presentation.Controllers
             if (!baseResult.Success)
                 return ProcessError(baseResult);
 
-            var company = ((ApiOkResponse<CompanyDto>)baseResult).Result;
+            var company = baseResult.GetResult<CompanyDto>();
 
             return Ok(company);
         }
