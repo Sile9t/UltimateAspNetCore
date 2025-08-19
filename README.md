@@ -53,17 +53,19 @@ It demonstrates building a **clean, layered architecture** using ASP.NET Core, s
 ---
 
 ## 📂 Project Structure
-   /ActionFilters                — Custom ASP.NET Core action filters
-   /CompanyEmployees.Presentation — Main Web API project (controllers, Startup)
-   /Contracts                    — Interfaces and DTOs
-   /Entities                     — Domain entities (database models)
-   /LoggerService                — Centralized logging service
-   /Repository                   — Data access layer (CRUD implementation)
-   /Service.Contracts            — Business logic contracts
-   /Service                      — Business logic implementation
-   /Shared                       — Shared utilities
-   WebApplication1.sln           — Visual Studio solution
-
+   
+   ```java
+      /ActionFilters                — Custom ASP.NET Core action filters
+      /CompanyEmployees.Presentation — Main Web API project (controllers, Startup)
+      /Contracts                    — Interfaces and DTOs
+      /Entities                     — Domain entities (database models)
+      /LoggerService                — Centralized logging service
+      /Repository                   — Data access layer (CRUD implementation)
+      /Service.Contracts            — Business logic contracts
+      /Service                      — Business logic implementation
+      /Shared                       — Shared utilities
+      WebApplication1.sln           — Visual Studio solution
+   ```
 ---
 
 ## 📸 Example API Request
