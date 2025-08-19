@@ -32,3 +32,60 @@ It demonstrates building a **clean, layered architecture** using ASP.NET Core, s
    ```bash
    git clone https://github.com/Sile9t/UltimateAspNetCore.git
    cd UltimateAspNetCore
+
+2. Restore dependencies:
+
+   ```bash
+   dotnet restore
+
+3. Build and run the project:
+
+   ```bash
+   dotnet build
+   dotnet run --project CompanyEmployees.Presentation
+
+4. Open in browser:
+
+   Swagger UI: https://localhost:5001/swagger
+
+   API root: https://localhost:5001/api
+
+---
+
+## 📂 Project Structure
+   /ActionFilters                — Custom ASP.NET Core action filters
+   /CompanyEmployees.Presentation — Main Web API project (controllers, Startup)
+   /Contracts                    — Interfaces and DTOs
+   /Entities                     — Domain entities (database models)
+   /LoggerService                — Centralized logging service
+   /Repository                   — Data access layer (CRUD implementation)
+   /Service.Contracts            — Business logic contracts
+   /Service                      — Business logic implementation
+   /Shared                       — Shared utilities
+   WebApplication1.sln           — Visual Studio solution
+
+---
+
+## 📸 Example API Request
+   
+   GET /api/companies
+   
+      Response:
+      [
+        {
+          "id": "e2b6c1a3-51c4-4a19-88e9-08db2e17e12b",
+          "name": "Code Maze Ltd.",
+          "address": "123 Code Street",
+          "country": "USA"
+        }
+      ]
+
+---
+
+## 🔮 Roadmap
+
+   - Add CQRS pattern with MediatR.
+
+   - Integrate FluentValidation for DTO validation.
+
+   - Extend unit test coverage (xUnit / NUnit).
